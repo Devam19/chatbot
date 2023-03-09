@@ -43,7 +43,7 @@ def check_all_messages(message):
 
 
     # Longer responses
-     response(long.R_RANK, ['ranking','rank', 'VIT'], single_response=True)
+    response(long.R_RANK, ['ranking','rank', 'VIT'], single_response=True)
     response(long.R_ADMIT, ['admission', 'VITEEE'], required_words=['admission'])
     response(long.R_ABOUT, ['about', 'VIT','how'], required_words=['about'])
     response(long.R_ADVICE, ['give', 'advice'], required_words=['advice'])
