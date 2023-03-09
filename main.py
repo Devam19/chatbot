@@ -57,6 +57,9 @@ def check_all_messages(message):
 
 # Used to get the response
 def get_response(user_input):
+    if(user_input=="bye" or user_input=="exit" or user_input=="good-bye"):
+        print('Thanks for using ChatBot, See you soon!!!')
+        exit(0)
     split_message = re.split(r'\s+|[,;?!.-]\s*', user_input.lower())
     response = check_all_messages(split_message)
     return response
